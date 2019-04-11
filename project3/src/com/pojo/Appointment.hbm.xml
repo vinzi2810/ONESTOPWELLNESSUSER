@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.pojo.User" table = "appointment_table">
+      
+      <meta attribute = "class-description">
+         This class contains the appointment details. 
+      </meta>
+      
+      <id name = "appointment_id" type = "int" column = "appointment_id"> 
+        <generator class="native"></generator>     
+      </id>
+      					<property name = "id" column = "id" type = "string"/>
+      					
+      					<property name = "doctor_id" column = "doctor_id" type = "string"/>
+            
+                        <property name = "hospital_id" column = "hospital_id" type = "string"/>
+            
+                        <property name = "date_selected" column = "date_selected" type = "string"/>
+            
+                        <property name = "slot_selected" column = "slot_selected" type = "string"/>
+            
+
+   </class>
+</hibernate-mapping> 
+
+

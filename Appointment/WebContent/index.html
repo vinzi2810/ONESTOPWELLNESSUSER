@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="themejs.js"></script>
+<link rel="stylesheet" type="text/css" href="theme.css">
+<title>Insert title here</title>
+    <link href="styles/glDatePicker.default.css" rel="stylesheet" type="text/css">
+
+     <script src="glDatePicker.min.js"></script>
+      <link rel="stylesheet" href="glDatePicker.default.css">
+ 
+
+    <script type="text/javascript">
+        $(window).load(function()
+        {
+            $('input').glDatePicker();
+        });
+    </script>
+</head>
+<body>
+
+<div class="container">
+
+
+
+  <!-- Button to Open the Modal -->
+  
+  <table>
+  <tr>
+  <td>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+  Book an appointment
+  </button>
+  </td>
+   
+  </tr>
+</table>
+  <!-- The Modal -->
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <!--  <h4 class="modal-title">SIGN IN</h4>-->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="form-horizontal" action='' method="POST">
+  <fieldset>
+    <div id="legend">
+      <legend class="">Book an appointment</legend>
+    </div>
+        <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" for="password">Username:</label>
+      <div class="controls">
+        <input type="username" id="username" name="username" placeholder="" class="input-xlarge">
+        
+      </div>
+    <div class="control-group">
+
+      <label class="control-label"  for="username">Date:</label>
+      <div class="controls">
+       
+     
+
+    <div class="form-row show-inputbtns">
+    
+         <div gldp-el="mydate"
+         style="width:400px; height:300px; position:absolute; top:70px; left:100px;">
+    </div>
+    
+    <input type="text" id="mydate" gldp-id="mydate" />
+   
+    </div>
+
+
+        
+      </div>
+    </div>
+ 
+
+ 
+    <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" for="password">Password</label>
+      <div class="controls">
+        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+        
+      </div>
+    </div>
+        <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" for="password">Type</label>
+
+    </div>
+ 
+
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+        <button class="btn btn-success">BOOK</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <!--  <h4 class="modal-title">SIGN UP</h4>-->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="form-horizontal" action='' method="POST">
+  <fieldset>
+    <div id="legend">
+    <legend class="">SIGN UP</legend>
+    </div>
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label"  for="username">Username</label>
+      <div class="controls">
+        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- E-mail -->
+      <label class="control-label" for="email">E-mail</label>
+      <div class="controls">
+        <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+        <p class="help-block">Please provide your E-mail</p>
+      </div>
+    </div>
+    <div class="control-group">
+      <!-- E-mail -->
+      <label class="control-label" for="email">Contact Number</label>
+      <div class="controls">
+        <input type="text" id="contact" name="contact" placeholder="" class="input-xlarge">
+        <p class="help-block">Please provide your Contact number</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" for="password">Password</label>
+      <div class="controls">
+        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+        <p class="help-block">Password should be at least 4 characters</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password -->
+      <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+      <div class="controls">
+        <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+        <p class="help-block">Please confirm password</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+        <button class="btn btn-success">Register</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Submit</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
